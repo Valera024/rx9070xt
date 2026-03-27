@@ -1,135 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effective Solutions for Your Business</title>
+    <title>Купити відеокарту</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
+            color: white;
+        }
+
+        /* декоративні світіння */
+        body::before, body::after {
+            content: "";
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            filter: blur(120px);
+            z-index: 0;
+        }
+
+        body::before {
+            background: #00f0ff;
+            top: 10%;
+            left: 10%;
+        }
+
+        body::after {
+            background: #ff00c8;
+            bottom: 10%;
+            right: 10%;
+        }
+
+        .card {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            width: 320px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #00ffcc;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(45deg, #00f0ff, #ff00c8);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #00f0ff;
+        }
+    </style>
 </head>
-
 <body>
-    <header>
 
-        <nav>
-            <a href="./index.html">WebStudio</a>
-            <ul>
-                <li><a href="">Studio</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contacts</a></li>
-            </ul>
-        </nav>
+<div class="card">
+    <img src="https://cdn.comfy.ua//media/catalog/product/r/x/rx9070xt-16g-e-oc-bp-570280-2247181_1_.jpg" alt="Відеокарта">
+    <div class="price">₴649 999</div>
+    <button class="btn">Купити</button>
+</div>
 
-        <!-- contacts -->
-        <address>
-            <ul>
-                <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a href="tel:+110001111111">+11 (000) 111-11-11</a>
-                </li>
-            </ul>
-        </address>
-    </header>
-
-    <main>
-
-        <section>
-            <!-- dark block -->
-            <h1>Effective Solutions for Your Business</h1>
-
-            <button type="button">Order Service</button>
-
-        </section>
-
-        <section>
-            <h2>About our company</h2>
-            <!-- about company -->
-
-            <ul>
-                <li>
-                    <h3>Strategy</h3>
-                    <p>Our goal is to identify the business
-                        problem to walk away with the perfect and creative solution.</p>
-                </li>
-                <li>
-                    <h3>Punctuality</h3>
-                    <p>Bring the key message to the brand's audience for the best price within the shortest possible
-                        time.
-                    </p>
-                </li>
-                <li>
-                    <h3>Diligence</h3>
-                    <p>Research and confirm brands that present the strongest digital growth opportunities and minimize
-                        risk.</p>
-                </li>
-                <li>
-                    <h3>Technologies</h3>
-                    <p>Design practice focused on digital experiences. We bring forth a deep passion for
-                        problem-solving.
-                    </p>
-                </li>
-            </ul>
-        </section>
-
-        <!-- section 2 3pic -->
-
-        <section>
-
-            <h2>What are we doing</h2>
-            <ul>
-                <li>
-                    <img src="./images/monitor.jpg" alt="application on the computer screen" width="360" height="360">
-                </li>
-                <li>
-                    <img src="./images/phone_chat.jpg" alt="chat on the phone" width="360" height="360">
-                </li>
-                <li>
-                    <img src="./images/phone_offers.jpg" alt="recommendations on the phone screen" width="360"
-                        height="360">
-                </li>
-            </ul>
-        </section>
-
-        <!-- team -->
-
-        <section>
-
-            <h2>Our Team</h2>
-
-            <ul>
-                <li>
-                    <img src="./images/Mark.jpg" alt="photo Mark" width="264" height="260">
-                    <h3>Mark Guerrero</h3>
-                    <p>Product Designer</p>
-                </li>
-                <li>
-                    <img src="./images/Tom.jpg" alt="photo Tom" width="264" height="260">
-                    <h3>Tom Ford</h3>
-                    <p>Frontend Developer</p>
-                </li>
-                <li>
-                    <img src="./images/Camila.jpg" alt="photo Camila" width="264" height="260">
-                    <h3>Camila Garcia</h3>
-                    <p>Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/Daniel.jpg" alt="photo Daniel" width="264" height="260">
-                    <h3>Daniel Wilson</h3>
-                    <p>UI Designer</p>
-                </li>
-            </ul>
-        </section>
-
-    </main>
-
-    <!-- footer -->
-
-    <footer>
-        <!-- logo -->
-        <a href="./index.html">WebStudio</a>
-        <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-    </footer>
 </body>
-
 </html>
